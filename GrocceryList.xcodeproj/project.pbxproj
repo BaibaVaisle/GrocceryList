@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		BE723AAB26BAF11F00C2DF87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE723AAA26BAF11F00C2DF87 /* AppDelegate.swift */; };
 		BE723AAD26BAF11F00C2DF87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE723AAC26BAF11F00C2DF87 /* SceneDelegate.swift */; };
-		BE723AAF26BAF11F00C2DF87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE723AAE26BAF11F00C2DF87 /* ViewController.swift */; };
 		BE723AB226BAF11F00C2DF87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE723AB026BAF11F00C2DF87 /* Main.storyboard */; };
-		BE723AB526BAF11F00C2DF87 /* GrocceryList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE723AB326BAF11F00C2DF87 /* GrocceryList.xcdatamodeld */; };
+		BE723AB526BAF11F00C2DF87 /* GroceryList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE723AB326BAF11F00C2DF87 /* GroceryList.xcdatamodeld */; };
 		BE723AB726BAF13000C2DF87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE723AB626BAF13000C2DF87 /* Assets.xcassets */; };
 		BE723ABA26BAF13000C2DF87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE723AB826BAF13000C2DF87 /* LaunchScreen.storyboard */; };
+		BE723AC526BAF3B900C2DF87 /* GroceryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE723AC426BAF3B900C2DF87 /* GroceryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE723AA726BAF11F00C2DF87 /* GrocceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrocceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE723AAA26BAF11F00C2DF87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE723AAC26BAF11F00C2DF87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BE723AAE26BAF11F00C2DF87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE723AB126BAF11F00C2DF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE723AB426BAF11F00C2DF87 /* GrocceryList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GrocceryList.xcdatamodel; sourceTree = "<group>"; };
 		BE723AB626BAF13000C2DF87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE723AB926BAF13000C2DF87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE723ABB26BAF13000C2DF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE723AC426BAF3B900C2DF87 /* GroceryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,40 @@
 		BE723AA926BAF11F00C2DF87 /* GrocceryList */ = {
 			isa = PBXGroup;
 			children = (
-				BE723AAA26BAF11F00C2DF87 /* AppDelegate.swift */,
-				BE723AAC26BAF11F00C2DF87 /* SceneDelegate.swift */,
-				BE723AAE26BAF11F00C2DF87 /* ViewController.swift */,
-				BE723AB026BAF11F00C2DF87 /* Main.storyboard */,
+				BE723AC126BAF13900C2DF87 /* AppDelegate */,
+				BE723AC226BAF14200C2DF87 /* Controller */,
+				BE723AC326BAF15100C2DF87 /* View */,
 				BE723AB626BAF13000C2DF87 /* Assets.xcassets */,
-				BE723AB826BAF13000C2DF87 /* LaunchScreen.storyboard */,
 				BE723ABB26BAF13000C2DF87 /* Info.plist */,
-				BE723AB326BAF11F00C2DF87 /* GrocceryList.xcdatamodeld */,
+				BE723AB326BAF11F00C2DF87 /* GroceryList.xcdatamodeld */,
 			);
 			path = GrocceryList;
+			sourceTree = "<group>";
+		};
+		BE723AC126BAF13900C2DF87 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BE723AAA26BAF11F00C2DF87 /* AppDelegate.swift */,
+				BE723AAC26BAF11F00C2DF87 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BE723AC226BAF14200C2DF87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE723AC426BAF3B900C2DF87 /* GroceryTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE723AC326BAF15100C2DF87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE723AB026BAF11F00C2DF87 /* Main.storyboard */,
+				BE723AB826BAF13000C2DF87 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE723AAF26BAF11F00C2DF87 /* ViewController.swift in Sources */,
 				BE723AAB26BAF11F00C2DF87 /* AppDelegate.swift in Sources */,
+				BE723AC526BAF3B900C2DF87 /* GroceryTableViewController.swift in Sources */,
 				BE723AAD26BAF11F00C2DF87 /* SceneDelegate.swift in Sources */,
-				BE723AB526BAF11F00C2DF87 /* GrocceryList.xcdatamodeld in Sources */,
+				BE723AB526BAF11F00C2DF87 /* GroceryList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,13 +371,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BE723AB326BAF11F00C2DF87 /* GrocceryList.xcdatamodeld */ = {
+		BE723AB326BAF11F00C2DF87 /* GroceryList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				BE723AB426BAF11F00C2DF87 /* GrocceryList.xcdatamodel */,
 			);
 			currentVersion = BE723AB426BAF11F00C2DF87 /* GrocceryList.xcdatamodel */;
-			path = GrocceryList.xcdatamodeld;
+			path = GroceryList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
